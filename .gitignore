@@ -1,6 +1,10 @@
 # Dependencies
 /node_modules
 
+# Lock file
+yarn.lock
+package-lock.json
+
 # Bundled file
 /lib
 /comp
