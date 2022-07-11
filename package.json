@@ -1,9 +1,27 @@
 {
-  "name": "@nara/accent",
+  "name": "@nara-way/accent",
   "version": "3.2.0",
-  "description": "Nara Accent",
-  "author": "Nextree",
-  "license": "UNLICENSED",
+  "description": "Nara Way Accent",
+  "keywords": [
+    "nara",
+    "naraway",
+    "accent"
+  ],
+  "author": "Nara Way <naraway@nextree.io> (http://naraway.io)",
+  "homepage": "https://naraway.io",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/naraway/accent-front.git",
+    "web": "https://github.com/naraway/accent-front"
+  },
+  "license": {
+    "type": "Apache-2.0",
+    "url": "https://opensource.org/licenses/apache2.0.php"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "private": false,
   "main": "./dist/index.umd.js",
   "module": "./dist/index.es.js",
   "exports": {
