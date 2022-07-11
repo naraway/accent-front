@@ -6,15 +6,15 @@
 
 --- 
 
-> It is a library-type project that defines the Accent front.  
-> It is a Nara Way v3 based project and consists of `vite` and `storybook` modules.  
-> Nara Drama's `api`, `statekeeper`, and `view` are located under `lib`.
+> It is a library project that defines the Nara Way drama front.  
+> It is a project that based on Nara Way and consists of `vite` and `storybook` modules.  
+> Nara Way drama's `api`, `statekeeper`, and `view` are located under `lib`.
 
 ## 1. Storybook
 
 `storybook`, `build-storybook`
 
-> Start a storybook for testing your component locally.  
+> Start a storybook for testing accent component locally.  
 > Or build a storybook for deployment to a server.
 
 ```shell
@@ -33,7 +33,7 @@ yarn storbuild-storybookybook
 
 `build`
 
-> Build modularly for use on other front project.  
+> Build as front library module.  
 
 ```shell
 # build
@@ -46,7 +46,7 @@ yarn build
 
 `lint`, `lint-fix`
 
-> Batch change code that can be ES lint checked and auto-corrected.
+> Check and fix the code based on ESLint.
 
 ```shell
 # lint check
