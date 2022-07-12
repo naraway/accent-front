@@ -28,7 +28,7 @@
     "useDefineForClassFields": true,
     "paths": {
       "~/*": ["*"],
-      "@nara/accent": ["lib"]
+      "@nara-way/accent": ["lib"]
     },
     "plugins": [{
       "transform": "typescript-transform-paths",

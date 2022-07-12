@@ -5,7 +5,7 @@ class NaraException extends Error {
     super();
 
     super.name = 'NaraException';
-    super.message = NaraException.getMessage('@nara', moduleName, message);
+    super.message = NaraException.getMessage('@nara-way', moduleName, message);
   }
 
   // TODO: appName 환경변수로 분리해서 자동으로 로드하도록 변경

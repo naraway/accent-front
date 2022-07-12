@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { ComponentMeta, ComponentStory } from '@storybook/react';
-import { ActorKey } from '@nara/accent';
+import { ActorKey } from '@nara-way/accent';
 
 export default {
   title: 'domain/key/ActorKey',
