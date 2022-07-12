@@ -8,7 +8,7 @@ class WorkspaceException extends NaraException {
     super(moduleName, message);
 
     super.name = 'AuthException';
-    super.message = NaraException.getMessage('@nara.drama', moduleName, message);
+    super.message = NaraException.getMessage('@nara-way', moduleName, message);
   }
 }
 

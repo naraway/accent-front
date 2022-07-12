@@ -8,7 +8,7 @@ class InvalidPropsException extends NaraException {
     super(moduleName, message);
 
     super.name = 'InvalidPropsException';
-    super.message = NaraException.getMessage('@nara.drama', moduleName, message);
+    super.message = NaraException.getMessage('@nara-way', moduleName, message);
   }
 }
 

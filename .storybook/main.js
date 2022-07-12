@@ -25,7 +25,7 @@ module.exports = ({
       plugins: [],
       resolve: {
         alias: {
-          '@nara/accent': path.resolve(__dirname, '../src/lib'),
+          '@nara-way/accent': path.resolve(__dirname, '../src/lib'),
           '~': path.resolve(__dirname, '../src'),
         }
       },

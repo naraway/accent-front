@@ -11,7 +11,7 @@ class ApiException extends NaraException {
     super(moduleName, message);
 
     super.name = 'ApiException';
-    super.message = NaraException.getMessage('@nara', moduleName, message);
+    super.message = NaraException.getMessage('@nara-way', moduleName, message);
   }
 }
 

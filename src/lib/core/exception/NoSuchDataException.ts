@@ -8,7 +8,7 @@ class NoSuchDataException extends NaraException {
     super(moduleName, message);
 
     super.name = 'NoSuchDataException';
-    super.message = NaraException.getMessage('@nara.drama', moduleName, message);
+    super.message = NaraException.getMessage('@nara-way', moduleName, message);
   }
 }
 

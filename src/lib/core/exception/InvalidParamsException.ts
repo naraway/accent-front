@@ -8,7 +8,7 @@ class InvalidParamsException extends NaraException {
     super(moduleName, message);
 
     super.name = 'InvalidParamsException';
-    super.message = NaraException.getMessage('@nara.drama', moduleName, message);
+    super.message = NaraException.getMessage('@nara-way', moduleName, message);
   }
 }
 
