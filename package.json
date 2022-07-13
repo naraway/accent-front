@@ -35,7 +35,7 @@
     "dist"
   ],
   "scripts": {
-    "storybook": "start-storybook -p 6000",
+    "storybook": "start-storybook -p 4000",
     "build-storybook": "build-storybook -s public",
     "build": "vite build && ttsc -p src/lib/tsconfig.json",
     "publish-local": "yarn build && yarn publish --prerelease",
