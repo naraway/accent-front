@@ -27,8 +27,7 @@
     "strictPropertyInitialization": true,
     "useDefineForClassFields": true,
     "paths": {
-      "~/*": ["*"],
-      "@nara-way/accent": ["lib"]
+      "~/*": ["*"]
     },
     "plugins": [{
       "transform": "typescript-transform-paths",
