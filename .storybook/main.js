@@ -12,11 +12,7 @@ module.exports = ({
   ],
   framework: '@storybook/react',
   core: {
-    builder: '@storybook/builder-vite',
-    disableTelemetry: true,
-  },
-  features: {
-    storyStoreV7: true,
+    builder: 'storybook-builder-vite',
   },
   viteFinal: async (config, { configType }) => {
     const { config: userConfig } = await loadConfigFromFile(
@@ -31,8 +27,8 @@ module.exports = ({
         alias: {
           '@nara-way/accent': path.resolve(__dirname, '../src/lib'),
           '~': path.resolve(__dirname, '../src'),
-        }
-      }
+        },
+      },
     });
   },
 });
