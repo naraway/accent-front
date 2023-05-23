@@ -14,7 +14,7 @@
     "experimentalDecorators": true,
     "forceConsistentCasingInFileNames": true,
     "isolatedModules": false,
-    "jsx": "react",
+    "jsx": "react-jsx",
     "module": "esnext",
     "moduleResolution": "node",
     "noEmit": true,
@@ -26,18 +26,9 @@
     "strict": true,
     "strictPropertyInitialization": true,
     "useDefineForClassFields": true,
-    "paths": {
-      "~/*": ["*"]
-    },
-    "plugins": [{
-      "transform": "typescript-transform-paths",
-      "afterDeclarations": true
-    }]
+    "paths": { "~/*": ["*"] },
+    "plugins": [{ "transform": "typescript-transform-paths", "afterDeclarations": true }]
   },
-  "include": [
-    "src/lib"
-  ],
-  "exclude": [
-    "node_modules"
-  ]
+  "include": ["src"],
+  "exclude": ["node_modules", "storybook"]
 }
