@@ -1,27 +1,9 @@
 {
   "name": "@nara-way/accent",
-  "version": "3.2.2",
-  "description": "Nara Way Accent",
-  "keywords": [
-    "nara",
-    "naraway",
-    "accent"
-  ],
-  "author": "Nara Way <naraway@nextree.io> (http://naraway.io)",
-  "homepage": "https://naraway.io",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/naraway/accent-front.git",
-    "web": "https://github.com/naraway/accent-front"
-  },
-  "license": {
-    "type": "Apache-2.0",
-    "url": "https://opensource.org/licenses/apache2.0.php"
-  },
-  "publishConfig": {
-    "access": "public"
-  },
-  "private": false,
+  "version": "4.1.0-0",
+  "description": "NARA Way Accent",
+  "author": "NARA Way <naraway@nextree.io> (http://naraway.io)",
+  "license": "UNLICENSED",
   "main": "./dist/index.umd.js",
   "module": "./dist/index.es.js",
   "exports": {
@@ -35,52 +17,42 @@
     "dist"
   ],
   "scripts": {
-    "storybook": "start-storybook -p 4000",
-    "build-storybook": "build-storybook -s public",
-    "build": "vite build && ttsc -p src/lib/tsconfig.json",
-    "publish-local": "yarn build && yarn publish --prerelease",
-    "lint": "eslint '*/**/*.{ts,tsx,js,jsx}'",
-    "lint-fix": "eslint --fix '*/**/*.{ts,tsx,js,jsx}'"
-  },
-  "dependencies": {},
-  "peerDependencies": {
-    "mobx": "^6.0.0",
-    "mobx-react": "^7.0.0",
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0"
+    "storybook": "storybook dev -p 4000",
+    "build-storybook": "storybook build -s public",
+    "build": "vite build && ttsc -p src/tsconfig.json",
+    "nara-update": "ncu -u /@nara/"
   },
   "devDependencies": {
-    "@rollup/plugin-typescript": "^8.0.0",
-    "@storybook/addon-actions": "^6.0.0",
-    "@storybook/addon-essentials": "^6.0.0",
-    "@storybook/addon-links": "^6.0.0",
-    "@storybook/react": "^6.0.0",
-    "@types/react": "^18.0.0",
-    "@types/react-dom": "^18.0.0",
-    "@typescript-eslint/eslint-plugin": "^5.0.0",
-    "@typescript-eslint/parser": "^5.0.0",
-    "@vitejs/plugin-react": "^1.0.0",
-    "eslint": "^8.0.0",
-    "eslint-config-airbnb-typescript": "^17.0.0",
-    "eslint-import-resolver-typescript": "^3.0.0",
-    "eslint-plugin-import": "^2.0.0",
-    "eslint-plugin-only-warn": "^1.0.0",
-    "eslint-plugin-react": "^7.0.0",
-    "mobx": "^6.0.0",
-    "mobx-react": "^7.0.0",
-    "npm-check-updates": "^15.0.0",
-    "raw-loader": "^4.0.0",
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0",
-    "rollup-plugin-auto-external": "^2.0.0",
-    "rollup-plugin-styles": "^4.0.0",
-    "storybook-addon-turbo-build": "^1.0.0",
-    "storybook-builder-vite": "^0.1.0",
-    "ttypescript": "^1.0.0",
-    "typescript": "^4.0.0",
-    "typescript-transform-paths": "^3.0.0",
-    "vite": "^2.0.0",
-    "vite-tsconfig-paths": "^3.0.0"
+    "@rollup/plugin-typescript": "^11",
+    "@storybook/addon-interactions": "^7",
+    "@storybook/addon-actions": "^7",
+    "@storybook/addon-essentials": "^7",
+    "@storybook/addon-links": "^7",
+    "@storybook/blocks": "^7",
+    "@storybook/builder-vite": "^7",
+    "@storybook/react": "^7",
+    "@storybook/react-vite": "^7",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "@typescript-eslint/eslint-plugin": "^5",
+    "@typescript-eslint/parser": "^5",
+    "@vitejs/plugin-react": "^3",
+    "eslint": "^8",
+    "eslint-config-airbnb-typescript": "^17",
+    "eslint-import-resolver-typescript": "^3",
+    "eslint-plugin-import": "^2",
+    "eslint-plugin-only-warn": "^1",
+    "npm-check-updates": "^16",
+    "prettier": "^2",
+    "raw-loader": "^4",
+    "react": "^18",
+    "react-dom": "^18",
+    "storybook": "^7",
+    "ttypescript": "^1",
+    "typescript": "^4",
+    "typescript-transform-paths": "^3",
+    "vite": "^4",
+    "vite-tsconfig-paths": "^4"
   },
   "browserslist": {
     "production": [

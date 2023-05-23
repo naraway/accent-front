@@ -1,23 +1,19 @@
-const { loadConfigFromFile, mergeConfig } = require("vite");
-const path = require("path");
+const { loadConfigFromFile, mergeConfig } = require('vite');
+const path = require('path');
 
-module.exports = ({
+module.exports = {
   stories: [
-    '../src/storybook/stories/**/*.stories.mdx',
-    '../src/storybook/stories/**/*.stories.@(js|jsx|ts|tsx)',
+    '../storybook/**/*.stories.mdx',
+    '../storybook/**/*.stories.@(js|jsx|ts|tsx)',
+    '../src/**/*.stories.mdx',
+    '../src/**/*.stories.@(js|jsx|ts|tsx)',
   ],
-  addons: [
-    '@storybook/addon-links',
-    '@storybook/addon-essentials',
-  ],
-  framework: '@storybook/react',
-  core: {
-    builder: 'storybook-builder-vite',
-  },
+  addons: ['@storybook/addon-links', '@storybook/addon-essentials', '@storybook/addon-interactions'],
+  framework: { name: '@storybook/react-vite', options: {} },
+  docs: { autodocs: 'tag' },
+  core: { builder: '@storybook/builder-vite' },
   viteFinal: async (config, { configType }) => {
-    const { config: userConfig } = await loadConfigFromFile(
-      path.resolve(__dirname, "../vite.config.ts")
-    );
+    const { config: userConfig } = await loadConfigFromFile(path.resolve(__dirname, '../vite.config.ts'));
 
     return mergeConfig(config, {
       ...userConfig,
@@ -25,10 +21,10 @@ module.exports = ({
       plugins: [],
       resolve: {
         alias: {
-          '@nara-way/accent': path.resolve(__dirname, '../src/lib'),
+          '@nara-way/accent': path.resolve(__dirname, '../src'),
           '~': path.resolve(__dirname, '../src'),
         },
       },
     });
   },
-});
+};
