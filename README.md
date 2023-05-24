@@ -1,20 +1,20 @@
 # @nara-way/accent
 
 The accent module provides a basic types and ubiquitous language for developing
-drama on [NARA Way](https://naraway.io). For a detailed usage or guide document, 
+drama on [NARA Way](https://naraway.io). For a detailed usage or guide document,
 please see [NARA Way](https://naraway.io).
 
 ## Features
 
-- Domain Base Model Types
-- Interface Types for Message Types
-- Base model types for Kollection and Drama
-- Tenant Base Model Types
-- Utility Functions and Classes
+- Domain base model types
+- Interface for message types
+- Base model types for kollection and drama
+- Tenant base model types
+- Utility functions and classes
 
 ## Installation
 
-```bash
+```sh
 npm install @nara-way/accent
 ```
 
@@ -23,7 +23,7 @@ npm install @nara-way/accent
 ### Entities
 
 You can generate a list of changed properties from a Domain Entity source and a
-changed object. Or you can provide a function for the purpose of generating a 
+changed object. Or you can provide a function for the purpose of generating a
 `NameValueList` object.
 
 Getting changed `nameValues` between source and modified entity:
@@ -59,8 +59,8 @@ const nameValues: NameValueList = Entities.nameValues(
 
 ### TenantKeys
 
-You can generate id key values for types derived from object id key values for 
-tenant and workspace types used on the NARA platform. For example, you can 
+You can generate id key values for types derived from object id key values for
+tenant and workspace types used on the NARA platform. For example, you can
 generate a stage key value from actor or get a citizen key value from actor.
 
 ```ts
@@ -97,7 +97,7 @@ pages.
 | hasFirst    | boolean  | Has first page        |
 | hasLast     | boolean  | Has last page         |
 
-To get the offset information by specifying the page to navigate to, use the 
+To get the offset information by specifying the page to navigate to, use the
 following function:
 
 ```ts
